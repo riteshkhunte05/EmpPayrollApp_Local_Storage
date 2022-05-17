@@ -1,12 +1,11 @@
 body {
     margin: 0;
     height: 100%;
-    background-color: rgba(192, 138, 134, 0.925);
 }
 
 .header {
     padding: 15px 0;
-    background-color: #b6dbd2;
+    background-color: #ffffff;
 }
 
 .header-content {
@@ -14,7 +13,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid rgba(0, 41, 128, 0.808);
+    border: 0px solid green;
 }
 
 .logo-content {
@@ -33,12 +32,12 @@ body {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #0c30a7d0;
+    color: #82a70c;
     text-transform: capitalize;
 }
 
 .emp-payroll {
-    color: #425f5fee;
+    color: #42515f;
 }
 
 * {
@@ -48,7 +47,7 @@ body {
 
 .form-content {
     min-height: calc(100%-80px);
-    background-color: #a77a9ae8;
+    background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,5 +180,4 @@ select {
 .cancelButton{
     text-decoration: none;
     text-align: center;
-   
 }

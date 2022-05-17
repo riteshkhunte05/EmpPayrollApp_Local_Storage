@@ -12,19 +12,19 @@
 </head>
 
 <body>
-    <!-- uc1 -->
+
     <header class="header-content header">
         <div class="logo-content">
-            <img class="logo-content-img" src="/assets/images/logo.PNG" alt="" />
+            <img class="logo-content-img" src="/assets/logo.png" alt="" />
             <div>
                 <span class="emp-text">EMPLOYEE</span><br />
                 <span class="emp-text emp-payroll">PAYROLL</span>
             </div>
         </div>
     </header>
-    <div id="formId" class="form-content">
-        <form class="form" action="#" onsubmit="save()" onreset="resetForm()">
-            <!-- uc2 -->
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event);" return false>
+
             <div class="form-head">Employee Payroll Form</div>
 
             <div class="row-content">
@@ -33,38 +33,30 @@
                 <error-output class="text-error" for="text"></error-output>
             </div>
 
-            <!-- uc3 -->
+
             <div class="row-content">
                 <label class="label text" for="profile">Profile image</label>
                 <div class="profile-radio-content">
                     <label>
-                        <input type="radio" id="profile1" name="profile" value="assets\M1.png" required>
-                        <img class="profile" id="image1" src="/assets/M1.png" alt="#">
+                        <input type="radio" id="profile1" name="profile" value="assets\images\Eclipse-1.PNG" required>
+                        <img class="profile" id="image1" src="/assets/Eclipse-1.png" alt="#">
                     </label>
                     <label>
-                        <input type="radio" id="profile2" name="profile" value="assets\F1.png" required>
-                        <img class="profile" id="image2" src="/assets/F1.png" alt="#">
+                        <input type="radio" id="profile2" name="profile" value="assets\images\Eclipse-2.PNG" required>
+                        <img class="profile" id="image2" src="/assets/Eclipse-2.png" alt="#">
                     </label>
                     <label>
-                        <input type="radio" id="profile3" name="profile" value="assets\M2.png" required>
-                        <img class="profile" id="image3" src="/assets/M2.png" alt="#">
+                        <input type="radio" id="profile3" name="profile" value="assets\images\Eclipse-3.PNG" required>
+                        <img class="profile" id="image3" src="/assets/Eclipse-3.png" alt="#">
                     </label>
                     <label>
-                        <input type="radio" id="profile4" name="profile" value="assets\F2.png" required>
-                        <img class="profile" id="image4" src="/assets/F2.png" alt="#">
-                    </label>
-                    <label>
-                        <input type="radio" id="profile5" name="profile" value="assets\M3.png" required>
-                        <img class="profile" id="image4" src="/assets/M3.png" alt="#">
-                    </label>
-                    <label>
-                        <input type="radio" id="profile6" name="profile" value="assets\F3.png" required>
-                        <img class="profile" id="image4" src="/assets/F3.png" alt="#">
+                        <input type="radio" id="profile4" name="profile" value="assets\images\Eclipse-4.PNG" required>
+                        <img class="profile" id="image4" src="/assets/Eclipse-4.png" alt="#">
                     </label>
                 </div>
             </div>
 
-    
+
             <div class="row-content">
                 <label class="label text" for="gender">Gender</label>
                 <div>
@@ -78,15 +70,15 @@
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
-                    <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
+                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
                     <label class="text" for="hr">HR</label>
-                    <input class="checkbox" type="checkbox" id="sales" name="department" value="Sales">
+                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales">
                     <label class="text" for="sales">Sales</label>
-                    <input class="checkbox" type="checkbox" id="finance" name="department" value="Finance">
+                    <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance">
                     <label class="text" for="finance">Finance</label>
-                    <input class="checkbox" type="checkbox" id="engineer" name="department" value="Engineer">
+                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="Engineer">
                     <label class="text" for="Engineer">Engineer</label>
-                    <input class="checkbox" type="checkbox" id="others" name="department" value="Others">
+                    <input class="checkbox" type="checkbox" id="others" name="others" value="Others">
                     <label class="text" for="others">Others</label>
                 </div>
             </div>
@@ -101,7 +93,7 @@
             <div class="row-content">
                 <label class="text" for="startDate">Start Date</label>
                 <div>
-                    <select id="day" name="Day" >
+                    <select name="Day" id="day">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -135,7 +127,7 @@
                         <option value="31">31</option>
                     </select>
 
-                    <select  id="month" name="Month">
+                    <select name="Month" id="month">
                         <option value="Jan">January</option>
                         <option value="Feb">Febuary</option>
                         <option value="March">March</option>
@@ -150,24 +142,22 @@
                         <option value="Dec">December</option>
                     </select>
 
-                    <select id="year" name="Year">
+                    <select name="Year" id="year">
                         <option value="2020">2022</option>
                         <option value="2020">2021</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
                         <option value="2018">2018</option>
                         <option value="2017">2017</option>
-
                         <option value="2016">2016</option>
                     </select>
-                    <error-output class="date-error"></error-output>
                 </div>
             </div>
 
-            <!-- UC-6 -->
+
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
-                <textarea id="notes" class="input" name="Notes" placeholder="Add notes...."
+                <textarea id="notes" class="input" name="Notes" placeholder="add notes...."
                     style="height: 100px;"></textarea>
             </div>
             <div class="buttonParent">

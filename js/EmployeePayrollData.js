@@ -1,6 +1,5 @@
 class EmployeePayrollData {
 
-    // getter and setter method
     get id() {
         return this._id;
     }
@@ -61,7 +60,7 @@ class EmployeePayrollData {
         this._startDate = startDate
     }
 
-    //method
+
     toString() {
         const options = {
             year: 'numeric',
